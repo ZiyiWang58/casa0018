@@ -72,3 +72,13 @@ Exclusions:
 - reflective surfaces may affect image quality
 - cluttered backgrounds may increase confusion
 - some general waste items may visually resemble recyclable materials
+
+## Repository storage note
+
+The full dataset is stored locally due to repository size considerations. This repository includes a small set of representative sample images for documentation purposes only.
+
+## First-round dataset size
+- plastic_bottle: 60 images collected
+- can: 60 images collected
+- general_waste: 60 images collected
+- total: 180 images
