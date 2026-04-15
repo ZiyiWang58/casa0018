@@ -33,4 +33,11 @@ Can a transfer-learning-based image classifier, trained on a self-collected data
 - `media/` — figures, demo photos and final visuals
 
 ## Current status
-Project setup started.
+The first round of self-collected image data has been completed.
+
+Current dataset size:
+- plastic_bottle: 60 images
+- can: 60 images
+- general_waste: 60 images
+
+A small set of representative sample images is included in this repository, while the full dataset is stored locally for training and deployment work.
