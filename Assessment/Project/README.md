@@ -11,7 +11,7 @@ Can a transfer-learning-based image classifier, trained on a self-collected data
 ## Initial classes
 - plastic_bottle
 - can
-- general_waste
+- used_tissue
 
 ## Planned tools
 - Edge Impulse
