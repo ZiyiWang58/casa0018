@@ -3,7 +3,7 @@
 ## Final classes
 - plastic_bottle
 - can
-- general_waste
+- used_tissue
 
 ## Project dataset strategy
 This project will use a primarily self-collected image dataset captured using a smartphone camera. The goal is to build a lightweight image classifier for mobile deployment in realistic everyday indoor waste-sorting scenarios.
@@ -43,22 +43,25 @@ Exclusions:
 - bottle-shaped metal containers
 - foil or metal lids alone
 
-### general_waste
+### used_tissue
 Examples:
-- snack wrappers
-- used tissues
-- plastic bags
-- takeaway containers
-- coffee cup lids
-- mixed non-recyclable packaging
+- napkins
+- facial tissues
+- kitchen paper
+- lightly used thin tissue paper
 
 Inclusions:
-- visually messy or non-standard household waste
-- items that are not plastic bottles or drink cans
+- soft, thin, flexible paper tissue items
+- slightly crumpled or partially unfolded tissue paper
 
 Exclusions:
-- clear recyclable bottles
-- aluminium drink cans
+- coffee cups
+- paper cups
+- cardboard
+- food boxes
+- receipts
+- paper bags
+- yoghurt containers
 
 ## Collection principles
 - collect my own images
