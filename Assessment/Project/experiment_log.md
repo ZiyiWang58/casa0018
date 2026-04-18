@@ -165,4 +165,33 @@ Next step:
 - Perform a small final refinement of the dataset by adding more challenging examples for `used_tissue` and `plastic_bottle`.
 - Train an updated version of the transfer learning model.
 - Review whether the extra data improves confusion between classes, especially for `used_tissue`.
-- 
+
+---
+
+## 8 - Final refinement round results
+
+What I did:
+- Added a small set of more difficult `used_tissue` and `plastic_bottle` images
+- Added the new images to the training set
+- Regenerated image features in Edge Impulse
+- Increased the number of training cycles from 20 to 30
+- Trained a refined version of the transfer learning model
+
+Results:
+- Validation accuracy: 75.0%
+- Loss: 0.44
+- Weighted precision: 0.78
+- Weighted recall: 0.75
+- Weighted F1 score: 0.75
+
+Comparison with previous rounds:
+- Round 1 accuracy: 56.7%
+- Round 2 accuracy: 66.7%
+- Round 3 accuracy: 75.0%
+
+Interpretation:
+The final refinement improved the model further. The additional difficult training examples were especially helpful for the `used_tissue` class, which became significantly more reliable than in the previous round. This suggests that targeted data collection and small training adjustments can meaningfully improve a transfer learning model for small image classification tasks.
+
+Next step:
+- Deploy the refined Round 3 classifier to a smartphone as the final edge device.
+- Test the deployed system outside the training environment and record practical observations about usability and performance.
