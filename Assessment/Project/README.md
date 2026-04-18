@@ -44,17 +44,25 @@ A small set of representative sample images is included in this repository, whil
 
 ## Latest results
 
-### Baseline model (Round 1)
+### Round 1 baseline
 - Classes: `can`, `plastic_bottle`, `general_waste`
 - Validation accuracy: 56.7%
-- Main issue: the `general_waste` class was too visually broad and inconsistent
+- Loss: 1.30
+- Weighted F1 score: 0.46
 
-### Improved model (Round 2)
+### Round 2 improved model
 - Classes: `can`, `plastic_bottle`, `used_tissue`
 - Validation accuracy: 66.7%
-- Weighted precision: 0.70
-- Weighted recall: 0.67
+- Loss: 0.72
 - Weighted F1 score: 0.66
 
+### Round 3 final refinement
+- Classes: `can`, `plastic_bottle`, `used_tissue`
+- Validation accuracy: 75.0%
+- Loss: 0.44
+- Weighted precision: 0.78
+- Weighted recall: 0.75
+- Weighted F1 score: 0.75
+
 ### Key finding
-Replacing the overly broad `general_waste` class with a more visually consistent `used_tissue` class improved overall classification performance.
+The model improved substantially across three iterations. The most important improvement came from replacing the overly broad `general_waste` category with the more visually consistent `used_tissue` class, followed by a final refinement using harder examples and a slightly longer training schedule.
