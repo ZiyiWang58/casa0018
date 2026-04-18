@@ -40,3 +40,32 @@ Observations:
 
 Conclusion:
 Changing the third category to a more visually consistent class improved model performance substantially.
+
+## Round 3 final refinement results
+
+Dataset:
+- can: 90
+- plastic_bottle: 95
+- used_tissue: 100
+
+Training setup:
+- Transfer learning
+- 30 training cycles
+- Learning rate: 0.0005
+- Data augmentation: enabled
+
+Results:
+- Validation accuracy: 75.0%
+- Loss: 0.44
+- Weighted precision: 0.78
+- Weighted recall: 0.75
+- Weighted F1 score: 0.75
+
+Observations:
+- `can` remained the strongest class
+- `plastic_bottle` improved slightly but still showed some confusion with `can`
+- `used_tissue` improved substantially compared with Round 2
+- the class boundaries in the data explorer became clearer after the final refinement
+
+Conclusion:
+A small final refinement round with harder examples and increased training cycles improved the model further and produced the strongest version of the classifier.
