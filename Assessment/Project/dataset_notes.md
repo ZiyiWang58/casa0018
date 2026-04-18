@@ -63,6 +63,9 @@ Exclusions:
 - paper bags
 - yoghurt containers
 
+## Iteration note
+The previous third class (`general_waste`) performed poorly because it contained visually inconsistent objects. In the second round, it was replaced with `used_tissue`, which provided a more visually coherent category for training.
+
 ## Collection principles
 - collect my own images
 - keep classes as balanced as possible
