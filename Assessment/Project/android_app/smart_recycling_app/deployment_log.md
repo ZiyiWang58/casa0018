@@ -34,3 +34,27 @@ Outcome:
 Next step:
 - Implement static image classification in Flutter
 - Verify that the model can classify a test image correctly on the Android phone
+
+---
+
+## 3 - Static image inference successful on Android
+
+What I did:
+- Exported a float32 version of the trained Round 3 model from Edge Impulse for Flutter integration
+- Implemented a basic classifier service for loading the model and running local inference
+- Built a simple Flutter test screen for static image classification
+- Ran the Flutter app on a physical Android phone
+
+Outcome:
+- The app successfully ran the model locally on the Android phone
+- A static test image was classified successfully inside the Flutter app
+- The test output returned the class `can` with a confidence score of 54.2%
+
+Interpretation:
+- This confirms that the trained image classification model can be integrated into a custom Flutter application and run locally on a handheld Android device
+- The deployment pipeline from Edge Impulse export to mobile inference is now working
+
+Next step:
+- Replace the static test workflow with image input from the phone camera
+- Build a real-time or near-real-time classification interface
+- Add clearer result presentation and disposal guidance for the final prototype
