@@ -195,3 +195,27 @@ The final refinement improved the model further. The additional difficult traini
 Next step:
 - Deploy the refined Round 3 classifier to a smartphone as the final edge device.
 - Test the deployed system outside the training environment and record practical observations about usability and performance.
+
+---
+
+## 9 - Static Android inference working
+
+What I did:
+- Exported the final Round 3 model for mobile integration
+- Added the model and labels to the Flutter project assets
+- Implemented a basic Flutter inference screen
+- Ran the app on a physical Android phone
+- Verified that the app could classify a test image locally on the device
+
+Results:
+- The model ran successfully inside the Flutter app
+- The test image was classified as `can`
+- The confidence score displayed in the app was 54.2%
+
+Interpretation:
+- This confirmed that the project had progressed beyond model training into real mobile deployment
+- The Android phone is now functioning as the handheld edge device for the project
+
+Next step:
+- Implement camera-based classification
+- Improve the interface
