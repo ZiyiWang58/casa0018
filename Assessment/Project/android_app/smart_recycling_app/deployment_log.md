@@ -58,3 +58,24 @@ Next step:
 - Replace the static test workflow with image input from the phone camera
 - Build a real-time or near-real-time classification interface
 - Add clearer result presentation and disposal guidance for the final prototype
+
+---
+
+## 4 - Camera preview integrated into Flutter app
+
+What I did:
+- Added the Flutter camera plugin
+- Configured Android camera permission in the manifest
+- Implemented a dedicated camera preview screen
+- Tested the app on a physical Android phone
+- Verified that the phone camera could be accessed successfully inside the custom Flutter app
+
+Outcome:
+- The app can now display a live camera preview on the Android phone
+- This confirms that the project is ready to move from static local inference to camera-based classification
+
+Next step:
+- capture frames from the camera preview
+- run periodic on-device inference on the current image
+- display the prediction and confidence directly on top of the live camera view
+- 
