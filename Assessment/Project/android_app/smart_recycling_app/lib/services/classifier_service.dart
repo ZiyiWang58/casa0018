@@ -20,18 +20,26 @@ class ClassifierService {
   }
 
   Future<ClassificationResult> classifyAssetImage(String assetPath) async {
+    final byteData = await rootBundle.load(assetPath);
+    final imageBytes = byteData.buffer.asUint8List();
+    return classifyBytes(imageBytes);
+  }
+
+  Future<ClassificationResult> classifyBytes(Uint8List imageBytes) async {
     if (_interpreter == null) {
       throw Exception('Interpreter not loaded. Call loadModel() first.');
     }
 
-    final byteData = await rootBundle.load(assetPath);
-    final imageBytes = byteData.buffer.asUint8List();
     final decoded = img.decodeImage(imageBytes);
 
     if (decoded == null) {
       throw Exception('Failed to decode image.');
     }
 
+    return _classifyDecodedImage(decoded);
+  }
+
+  ClassificationResult _classifyDecodedImage(img.Image decoded) {
     final resized = img.copyResize(decoded, width: 96, height: 96);
 
     final input = _imageToInput(resized);
@@ -40,6 +48,7 @@ class ClassifierService {
     _interpreter!.run(input, output);
 
     final scores = _extractScores(output);
+
     int bestIndex = 0;
     double bestScore = scores[0];
 

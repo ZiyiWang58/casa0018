@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'screens/camera_preview_screen.dart';
+import 'screens/camera_live_classification_screen.dart';
 
 void main() {
   runApp(const SmartRecyclingApp());
@@ -17,7 +17,7 @@ class SmartRecyclingApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
         useMaterial3: true,
       ),
-      home: const CameraPreviewScreen(),
+      home: const CameraLiveClassificationScreen(),
     );
   }
 }
