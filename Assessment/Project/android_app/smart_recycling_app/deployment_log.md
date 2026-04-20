@@ -78,4 +78,27 @@ Next step:
 - capture frames from the camera preview
 - run periodic on-device inference on the current image
 - display the prediction and confidence directly on top of the live camera view
-- 
+
+---
+
+## 5 - Live camera classification working on Android
+
+What I did:
+- Extended the Flutter app from static image inference to camera-based inference
+- Added a live camera preview using the Android phone camera
+- Implemented periodic on-device classification of the current camera view
+- Displayed the predicted class, confidence score, and disposal suggestion in the app
+- Improved the preview layout so that the camera image fills the preview area without distortion, using cropping rather than stretching
+
+Outcome:
+- The app can now classify the current camera scene on a physical Android phone
+- The prototype supports near-real-time on-device image classification
+- The app now behaves as a handheld custom waste classification prototype rather than a static demo
+
+Observations:
+- The live prototype successfully recognised a plastic bottle in the camera view
+- The confidence score shown in the app was 69.7%
+- The camera preview became visually more polished after fixing aspect ratio distortion and replacing black borders with a cropped full-frame display
+
+Next step:
+- prepare the report, GitHub documentation, and video demonstration
