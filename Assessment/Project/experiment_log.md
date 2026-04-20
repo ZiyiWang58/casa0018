@@ -219,3 +219,25 @@ Interpretation:
 Next step:
 - Implement camera-based classification
 - Improve the interface
+
+---
+
+## 10 - Live Android prototype working
+
+What I did:
+- Integrated the Android phone camera into the Flutter app
+- Replaced static image testing with camera-based scene classification
+- Implemented periodic local inference on the current camera view
+- Improved the camera preview layout to avoid visual distortion and make the prototype look more polished
+
+Results:
+- The app successfully recognised a plastic bottle in the live camera view
+- The preview now fills the display area without stretching the image
+
+Interpretation:
+- The project has now moved beyond model training and static deployment
+- The Android phone is functioning as a handheld edge-AI prototype
+
+Next step:
+- prepare the report, GitHub documents, video
+- verify the app accuracy
