@@ -18,11 +18,19 @@ The Round 3 model was exported from Edge Impulse and added to the Flutter app as
 
 ### Phase 3
 Static image inference now works locally inside the Flutter app.
-The current test screen can load the model, run inference on a test image, and display the predicted class and confidence score.
 
-## Current model result in app
-- Prediction: `can`
-- Confidence: 54.2%
+### Phase 4
+The Android phone camera was integrated into the Flutter app and the camera preview worked successfully.
 
-## Next goal
-Move from static inference to camera-based classification.
+### Phase 5
+Near-real-time on-device classification now works inside the app using the live camera view.
+
+The current app can:
+- show a live camera preview
+- classify the current scene locally on the phone
+- display the predicted label
+- display the confidence score
+- display a disposal suggestion
+
+## Current status
+The prototype is now a working handheld Android edge-AI application rather than a static model test.
