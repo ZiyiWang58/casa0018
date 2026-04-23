@@ -6,7 +6,7 @@
 - used_tissue
 
 ## Project dataset strategy
-This project will use a primarily self-collected image dataset captured using a smartphone camera. The goal is to build a lightweight image classifier for mobile deployment in realistic everyday indoor waste-sorting scenarios.
+This project will use a self-collected image dataset captured using a smartphone camera. The goal is to build a lightweight image classifier for mobile deployment in realistic everyday indoor waste-sorting scenarios.
 
 ## Class definitions
 
@@ -79,12 +79,20 @@ The previous third class (`general_waste`) performed poorly because it contained
 - cluttered backgrounds may increase confusion
 - some general waste items may visually resemble recyclable materials
 
-## Repository storage note
-
-The full dataset is stored locally due to repository size considerations. This repository includes a small set of representative sample images for documentation purposes only.
-
 ## First-round dataset size
 - plastic_bottle: 60 images collected
 - can: 60 images collected
 - general_waste: 60 images collected
 - total: 180 images
+
+## Second-round dataset size
+- plastic_bottle: 80 images collected
+- can: 80 images collected
+- general_waste: 80 images collected
+- total: 240 images
+
+## Third-round dataset size
+- plastic_bottle: 95 images collected
+- can: 90 images collected
+- general_waste: 100 images collected
+- total: 285 images
