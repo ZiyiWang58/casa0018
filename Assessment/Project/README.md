@@ -2,7 +2,7 @@
 
 A handheld edge-AI waste classification prototype that runs locally on an Android phone.
 
-**Course:** CASA0018
+**Course:** CASA0018  
 **Tools:** Edge Impulse, TensorFlow Lite, Flutter, Android Studio  
 **Final platform:** Android phone  
 **Classes:** `can`, `plastic_bottle`, `used_tissue`
