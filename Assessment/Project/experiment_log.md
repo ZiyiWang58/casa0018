@@ -241,3 +241,35 @@ Interpretation:
 Next step:
 - prepare the report, GitHub documents, video
 - verify the app accuracy
+
+---
+
+## 11 - Accuracy experiment on the completed Android prototype
+
+What I did:
+- Evaluated the completed Android prototype using the live camera-based classification system rather than only Edge Impulse validation results
+- Designed a small real-world mobile test with 27 trials in total
+- Tested 3 classes: `can`, `plastic_bottle`, and `used_tissue`
+- Tested each class under 3 environmental conditions:
+  - good light with simple background
+  - longer viewing distance
+  - cluttered background
+- Repeated each condition 3 times
+- Recorded the true class, predicted class, confidence score, and whether the prediction was correct
+
+Results:
+- The overall mobile test accuracy was 77.8% (21 correct predictions out of 27)
+- Accuracy under **good light with simple background** was 100% (9/9)
+- Accuracy under **longer viewing distance** was 77.8% (7/9)
+- Accuracy under **cluttered background** was 55.6% (5/9)
+
+Per-class results:
+- `can`: 66.7% (6/9)
+- `plastic_bottle`: 88.9% (8/9)
+- `used_tissue`: 77.8% (7/9)
+
+Interpretation:
+- The overall mobile test result was close to the final Edge Impulse validation accuracy, which suggests that the model performance transferred reasonably well from the training platform to the Android prototype
+- The strongest condition was good lighting with a simple background, showing that the deployed system can work reliably in controlled use conditions
+- The weakest condition was cluttered background, indicating that scene complexity had the largest negative effect on performance
+- This experiment confirmed that the project should be evaluated not only by offline validation metrics, but also by real-world use conditions on the final handheld device
